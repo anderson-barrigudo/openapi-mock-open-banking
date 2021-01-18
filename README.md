@@ -44,7 +44,7 @@ docker run -p 8080:8080 -e "OPENAPI_MOCK_SPECIFICATION_URL=https://raw.githubuse
 ```
 
 
-## Getting started to run in the cloud
+## Getting started to run in the cloud using PWD - Play with Docker
 1. Access [PWD](https://labs.play-with-docker.com/) and start a new session with your [Docker Hub](https://hub.docker.com/) credentials.
 
 2. Once your session is active click on "Add New Instance".
