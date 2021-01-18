@@ -61,6 +61,7 @@ If ok, one message like that is appear:
 ![Figura 1](/img/fig-01.jpg)
 
 
+
 ## Getting started to run in the cloud using PWD - Play with Docker
 1. Access [PWD](https://labs.play-with-docker.com/) and start a new session with your [Docker Hub](https://hub.docker.com/) credentials.
 
