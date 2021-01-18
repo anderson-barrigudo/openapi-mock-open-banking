@@ -32,7 +32,7 @@ docker pull muonsoft/openapi-mock
 cd openapi-mock-open-banking
 ```
 
-6. Run the image of openapi-mock-open-banking
+6. Run the image of openapi-mock-open-banking.
 ```bash
 docker-compose up
 ```
@@ -42,6 +42,21 @@ Alternatively it's possible to run as a docker command:
 ```bash
 docker run -p 8080:8080 -e "OPENAPI_MOCK_SPECIFICATION_URL=https://raw.githubusercontent.com/luankevinferreira/areadesenvolvedor-widdershins/master/documentation/source/swagger/swagger_open_banking_apis.yaml" -e "OPENAPI_MOCK_USE_EXAMPLES=if_present" --rm muonsoft/openapi-mock
 ```
+
+
+7. Check if mock running typing this URL in your web browser:
+
+```
+http://127.0.0.1:8080/open-banking/discovery/v1/status
+```
+
+Alternatively it's possible check if run using this command to test:
+
+```bash
+curl 'http://127.0.0.1:8080/open-banking/discovery/v1/status'
+```
+
+If ok, one message like that is appear:
 
 
 ## Getting started to run in the cloud using PWD - Play with Docker
@@ -80,14 +95,19 @@ docker run -p 8080:8080 -e "OPENAPI_MOCK_SPECIFICATION_URL=https://raw.githubuse
 9. At the end of the process you should see the message such as "Creating openapi_mock ... done". The option -p 8080:8080 exposes the container port 8080 as the host port 8080 to the world.
 
 
-10. As a result a port 8080 link should have become active next to the IP. Click on it to access your openapi-mock-open-banking service or use this curl command:
-curl 'http://<YOUR_ID_PWD>.direct.labs.play-with-docker.com/open-banking/discovery/v1/status'
+10. As a result a port 8080 link should have become active next to the IP. Click on it to access your openapi-mock-open-banking service using your web browser:
+```
+http://<YOUR_ID_PWD>.direct.labs.play-with-docker.com/open-banking/discovery/v1/status
+```
 
 Alternatively it's possible to run this command to test that the server successfully run:
 
 ```bash
-curl 'http://localhost:8080/v1/pets'
+curl 'http://<YOUR_ID_PWD>.direct.labs.play-with-docker.com/open-banking/discovery/v1/status'
 ```
+
+If ok, one message like that is appear:
+
 
 ## REFERENCES
 - [OpenAPI Mock Server](https://github.com/muonsoft/openapi-mock)
