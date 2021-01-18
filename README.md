@@ -1,7 +1,11 @@
 # Project: openapi-mock-open-banking
 
 ## About this
-This project allows users to run Open Banking using Docker based on local machines or using [PWD - Play with Docker](https://labs.play-with-docker.com/). PWD is a Docker playground which allows users to run Docker commands in a matter of seconds.
+This project allows users to run Open Banking using:
+- [Docker based on local machines](#getting-started-to-run-on-local-machine) or;
+- [PWD - Play with Docker](#getting-started-to-run-in-the-cloud)*.
+
+*PWD is a Docker playground which allows users to run Docker commands in a matter of seconds.
 
 
 ## Dependencies
@@ -35,8 +39,7 @@ docker-compose up
 
 Alternatively it's possible to run as a docker command:
 
-```
-bash
+```bash
 docker run -p 8080:8080 -e "OPENAPI_MOCK_SPECIFICATION_URL=https://raw.githubusercontent.com/luankevinferreira/areadesenvolvedor-widdershins/master/documentation/source/swagger/swagger_open_banking_apis.yaml" -e "OPENAPI_MOCK_USE_EXAMPLES=if_present" --rm muonsoft/openapi-mock
 ```
 
@@ -70,8 +73,7 @@ docker-compose up
 
 Alternatively it's possible to run as a docker command:
 
-```
-bash
+```bash
 docker run -p 8080:8080 -e "OPENAPI_MOCK_SPECIFICATION_URL=https://raw.githubusercontent.com/luankevinferreira/areadesenvolvedor-widdershins/master/documentation/source/swagger/swagger_open_banking_apis.yaml" -e "OPENAPI_MOCK_USE_EXAMPLES=if_present" --rm muonsoft/openapi-mock
 ```
 
@@ -83,8 +85,7 @@ curl 'http://<YOUR_ID_PWD>.direct.labs.play-with-docker.com/open-banking/discove
 
 Alternatively it's possible to run this command to test that the server successfully run:
 
-```
-bash
+```bash
 curl 'http://localhost:8080/v1/pets'
 ```
 
