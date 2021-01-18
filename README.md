@@ -57,17 +57,21 @@ curl 'http://127.0.0.1:8080/open-banking/discovery/v1/status'
 ```
 
 If ok, one message like that is appear:
+
 ![Figura 1](/img/fig-01.jpg)
 
 
 ## Getting started to run in the cloud using PWD - Play with Docker
 1. Access [PWD](https://labs.play-with-docker.com/) and start a new session with your [Docker Hub](https://hub.docker.com/) credentials.
+
 ![Figura 2](/img/fig-02.jpg)
 
 2. Once your session is active click on "Add New Instance".
+
 ![Figura 3](/img/fig-03.jpg)
 
 3. A new instance will start with a Docker Engine ready to accept commands.
+
 ![Figura 4](/img/fig-04.jpg)
 
 4. Downloads an image of [OpenAPI Mock Server](https://github.com/muonsoft/openapi-mock)
@@ -75,6 +79,7 @@ If ok, one message like that is appear:
 ```bash
 docker pull muonsoft/openapi-mock
 ```
+
 ![Figura 5](/img/fig-05.jpg)
 
 5. Fork this repository on Github.
@@ -111,6 +116,7 @@ docker run -p 8080:8080 -e "OPENAPI_MOCK_SPECIFICATION_URL=https://raw.githubuse
 ```
 http://<YOUR_ID_PWD>.direct.labs.play-with-docker.com/open-banking/discovery/v1/status
 ```
+
 ![Figura 9](/img/fig-09.jpg)
 
 Alternatively it's possible to run this command to test that the server successfully run:
